@@ -22,7 +22,9 @@ In other words, I studied the shape of geometric objects (locally) defined by po
 
 $$f_i(z_1, \dots, z_n) = 0$$
 
-by looking at various algebraic gadgets attached to them (the focus mainly being on the derived category $D^b(X)$).
+by looking at various algebraic gadgets attached to them (the focus mainly being on the derived category $D^b(X)$). My PhD thesis can be found here:
+
+- **Flop-lop autoequivalences and composition of spherical twists**, [eprint/10168540](https://discovery.ucl.ac.uk/id/eprint/10168540/)
 
 Below is a list the papers I wrote during my PhD:
 
