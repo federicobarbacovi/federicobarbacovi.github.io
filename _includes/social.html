@@ -1,0 +1,4 @@
+<ul class="social-media-list">
+  {%- if site.github_username_one -%}<li><a href="https://github.com/{{ site.github_username_one| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg> <span class="username">{{ site.github_username_one| escape }}</span></a></li>{%- endif -%}
+  {%- if site.github_username_two -%}<li><a href="https://github.com/{{ site.github_username_two| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg> <span class="username">{{ site.github_username_two| escape }}</span></a></li>{%- endif -%}
+</ul>
