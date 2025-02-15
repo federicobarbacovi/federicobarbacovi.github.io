@@ -13,7 +13,7 @@ The results appeared in the following paper:
 
 <ol>
 <li value="8">
-<b>Practical Implementation of Pairing-Based zkSNARK in Bitcoin Script</b>, with Enrique Larraia, Paul Germouty, Wei Zhang, published in the <i>8th International Workshop on Cryptocurrencies and Blockchain Technology</i>, <a href="https://eprint.iacr.org/2024/1498">ePrint:2024/1498</a>.
+<b>Practical Implementation of Pairing-Based zkSNARK in Bitcoin Script</b>, with Enrique Larraia, Paul Germouty, Wei Zhang, published in the <a href="https://link.springer.com/book/9783031823480">Computer Security. ESORICS 2024 International Workshops</a> (as part of the proceedings of <i>8th International Workshop on Cryptocurrencies and Blockchain Technology</i>), <a href="https://eprint.iacr.org/2024/1498">ePrint:2024/1498</a>.
 </li>
 </ol>
 

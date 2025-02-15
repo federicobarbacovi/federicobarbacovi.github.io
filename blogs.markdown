@@ -18,4 +18,4 @@ Below is a list of some stuff I wrote (which will, hopefully, keep growing)
 
 # Notes
 
-- [Notes on bilinear pairings](https://github.com/nchain-innovation/zkscript_package/tree/add-notes-on-bilinear-pairings-36/notes): notes I wrote on bilinear pairings as a companion to the Github repository [zkscript](https://github.com/nchain-innovation/zkscript_package).
+- [Notes on bilinear pairings](./pdf/bilinear_pairings.pdf): notes I wrote on bilinear pairings as a companion to the Github repository [zkscript](https://github.com/nchain-innovation/zkscript_package).
