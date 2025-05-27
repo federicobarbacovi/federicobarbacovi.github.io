@@ -5,11 +5,18 @@ permalink: /research/
 katex: true
 ---
 
-# nChain
+# nChain / Teranode Group
 
 At nChain I have focused mainly on zkSNARKs and their implementations.
-The first project I worked on was the implementation in Bitcoin Script of the Groth16 verifier.
-The results appeared in the following paper:
+The first project I worked on was the implementation in Bitcoin Script of the Groth16 verifier, while the second focused on enforcing constraints on Bitcoin transactions using zero-knowledge proofs, so to ensure privacy and enhance programmability.
+
+The project led to two papers:
+
+<ol>
+<li value="9">
+<b>Enforcing arbitrary constraints on Bitcoin transactions</b>, with Enrique Larraia, <a href="https://eprint.iacr.org/2025/912">ePrint:2025:192</a>.
+</li>
+</ol>
 
 <ol>
 <li value="8">
@@ -17,7 +24,7 @@ The results appeared in the following paper:
 </li>
 </ol>
 
-The code supporting the paper (and more) is available in the GitHub repository [zkscript](https://github.com/nchain-innovation/zkscript_package).
+The code supporting the papers (and more) is available in the GitHub repositories [zkscript](https://github.com/nchain-innovation/zkscript_package) and [bitcoin_r1cs](https://github.com/nchain-innovation/bitcoin_r1cs).
 
 # PhD
 

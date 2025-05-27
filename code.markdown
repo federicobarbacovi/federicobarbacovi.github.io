@@ -15,6 +15,10 @@ Among the primitives implemented, there are:
     - Merkle trees
     - Pedersen commitments
 
+- [tcpBridge](https://github.com/nchain-innovation/tcpBridge):
+tcpBridge is the proof of concept of a bridge between Sui and BSV that allows wrapping Sui in BSV transaction outputs.
+This repositories relies on all the other repositories I worked on.
+
 - [elliptic_curves](https://github.com/nchain-innovation/elliptic_curves_package):
 a Python implementation of finite fields, elliptic curve arithmetic, and bilinear pairings.
 The library is mostly used as a way to produce test data for [zkscript](https://github.com/nchain-innovation/zkscript_package), and as an interface between [zkscript](https://github.com/nchain-innovation/zkscript_package) and [arkworks](https://github.com/arkworks-rs).

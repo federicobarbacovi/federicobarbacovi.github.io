@@ -20,11 +20,9 @@
 
 title: Federico Barbacovi
 email_one: federico.barbacovi@gmail.com
-email_two: f.barbacovi@nchain.com
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://federicobarbacovi.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username_one:  FedericoBarbacovi
-github_username_two:  BarbacoviF
 
 # Build settings
 theme: minima
