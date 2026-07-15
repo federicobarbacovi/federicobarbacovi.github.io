@@ -8,12 +8,11 @@ katex: true
 Coding is an integral part of my day-to-day work.
 Below is a summary of some of the coding project I'm working (or have worked) on:
 
+- [barretenberg](https://github.com/AztecProtocol/aztec-packages/tree/next/barretenberg): the cryprographic library powering [Aztec](https://github.com/AztecProtocol/aztec-packages/tree/next). I implemented new cryptographic primitives, performed audits of the code, and made various changes (both to circuits and the protocol) that resulted in substantial prover speedups. 
+
 - [zkscript](https://github.com/nchain-innovation/zkscript_package):
 zkscript is a library containing Bitcoin Script<sup><a href="#footnote">1</a></sup> implementations of various cryptographic primitives.
-Among the primitives implemented, there are:
-    - a Groth16 verifier (over BLS12-381 and MNT4-753)
-    - Merkle trees
-    - Pedersen commitments
+Among the primitives implemented, there are a Groth16 verifier (over BLS12-381 and MNT4-753), Merkle trees, scalar point multiplication on secp256k1, and Pedersen commitments. For the list of all the primitives implemented, please have a look at the repository.
 
 - [tcpBridge](https://github.com/nchain-innovation/tcpBridge):
 tcpBridge is the proof of concept of a bridge between Sui and BSV that allows wrapping Sui in BSV transaction outputs.
