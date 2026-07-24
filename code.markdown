@@ -6,32 +6,52 @@ katex: true
 ---
 
 Coding is an integral part of my day-to-day work.
-Below is a summary of some of the coding project I'm working (or have worked) on:
+Below are some of the cryptographic libraries and research prototypes I work on or have contributed to.
 
-- [barretenberg](https://github.com/AztecProtocol/aztec-packages/tree/next/barretenberg): the cryprographic library powering [Aztec](https://github.com/AztecProtocol/aztec-packages/tree/next). I implemented new cryptographic primitives, performed audits of the code, and made various changes (both to circuits and the protocol) that resulted in substantial prover speedups. 
+<div class="project-grid">
+  <a class="project-card" href="https://github.com/AztecProtocol/aztec-packages/tree/next/barretenberg" data-reveal>
+    <span class="project-tags">C++ · Proof systems · Performance</span>
+    <h2>barretenberg</h2>
+    <p>The cryptographic library powering Aztec. I implemented new primitives, audited code, and changed circuits to deliver substantial prover speedups.</p>
+    <span class="card-link">View repository →</span>
+  </a>
 
-- [zkscript](https://github.com/nchain-innovation/zkscript_package):
-zkscript is a library containing Bitcoin Script<sup><a href="#footnote">1</a></sup> implementations of various cryptographic primitives.
-Among the primitives implemented, there are a Groth16 verifier (over BLS12-381 and MNT4-753), Merkle trees, scalar point multiplication on secp256k1, and Pedersen commitments. For the list of all the primitives implemented, please have a look at the repository.
+  <article class="project-card" data-reveal>
+    <span class="project-tags">Python · Bitcoin Script · zkSNARKs</span>
+    <h2><a href="https://github.com/nchain-innovation/zkscript_package">zkscript</a></h2>
+    <p>Bitcoin Script<sup><a href="#footnote" aria-label="See footnote 1">1</a></sup> implementations of cryptographic primitives, including Groth16 verifiers, Merkle trees, secp256k1 scalar multiplication, and Pedersen commitments.</p>
+    <a class="card-link" href="https://github.com/nchain-innovation/zkscript_package">View repository →</a>
+  </article>
 
-- [tcpBridge](https://github.com/nchain-innovation/tcpBridge):
-tcpBridge is the proof of concept of a bridge between Sui and BSV that allows wrapping Sui in BSV transaction outputs.
-This repositories relies on all the other repositories I worked on.
+  <a class="project-card" href="https://github.com/nchain-innovation/bitcoin_r1cs" data-reveal>
+    <span class="project-tags">Rust · R1CS · Zero knowledge</span>
+    <h2>bitcoin_r1cs</h2>
+    <p>R1CS equivalents of Bitcoin transactions, inputs, and outputs, built on arkworks to prove statements about Bitcoin transactions in zero knowledge.</p>
+    <span class="card-link">View repository →</span>
+  </a>
 
-- [elliptic_curves](https://github.com/nchain-innovation/elliptic_curves_package):
-a Python implementation of finite fields, elliptic curve arithmetic, and bilinear pairings.
-The library is mostly used as a way to produce test data for [zkscript](https://github.com/nchain-innovation/zkscript_package), and as an interface between [zkscript](https://github.com/nchain-innovation/zkscript_package) and [arkworks](https://github.com/arkworks-rs).
+  <a class="project-card" href="https://github.com/nchain-innovation/elliptic_curves_package" data-reveal>
+    <span class="project-tags">Python · Elliptic curves · Pairings</span>
+    <h2>elliptic_curves</h2>
+    <p>Finite fields, elliptic-curve arithmetic, and bilinear pairings, used to generate zkscript test data and interface with arkworks.</p>
+    <span class="card-link">View repository →</span>
+  </a>
 
-- [bitcoin_r1cs](https://github.com/nchain-innovation/bitcoin_r1cs):
-a Rust library containing R1CS equivalents of Bitcoin structures (transactions, inputs, outputs).
-The library builds on the [arkworks](https://github.com/arkworks-rs) framework to define structures that can be used to build circuits to prove statements about Bitcoin transactions in zero-knowledge.
+  <a class="project-card" href="https://github.com/nchain-innovation/tcpBridge" data-reveal>
+    <span class="project-tags">Sui · BSV · Bridge</span>
+    <h2>tcpBridge</h2>
+    <p>A proof-of-concept bridge between Sui and BSV that wraps Sui in BSV transaction outputs and connects the supporting cryptographic libraries.</p>
+    <span class="card-link">View repository →</span>
+  </a>
 
-- [transaction_chain_proof](https://github.com/nchain-innovation/transaction_chain_proof):
-a Rust library containing the implementation of a PCD predicate to prove statements about _transaction chains_.
-The idea is to use this predicate to prove that two UTXOs are linked are related to each other.
-NFTs are presented as a use case [here](https://github.com/nchain-innovation/zkscript_package/tree/nft_recursive_groth16/nft_example).
-
-
-[<a name="footnote">1</a>]:
-By Bitcoin Script here I mean the scripting language of BSV.
-<a href="https://wiki.bitcoinsv.io/index.php/Opcodes_used_in_Bitcoin_Script">Here</a> you can find the available opcodes (i.e., instructions).
+  <a class="project-card" href="https://github.com/nchain-innovation/transaction_chain_proof" data-reveal>
+    <span class="project-tags">Rust · PCD · UTXO</span>
+    <h2>transaction_chain_proof</h2>
+    <p>A PCD predicate proving statements about transaction chains. NFTs provide one motivating use case.</p>
+    <span class="card-link">View repository →</span>
+  </a>
+</div>
+<aside class="page-note" id="footnote">
+  <span class="page-note__marker">1</span>
+  <p>By Bitcoin Script here I mean the scripting language of BSV. <a href="https://wiki.bitcoinsv.io/index.php/Opcodes_used_in_Bitcoin_Script">Here</a> you can find the available opcodes (i.e., instructions).</p>
+</aside>

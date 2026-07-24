@@ -7,14 +7,13 @@ katex: true
 
 # nChain / Teranode Group
 
-At nChain I have focused mainly on zkSNARKs and their implementations.
-The first project I worked on was the implementation in Bitcoin Script of the Groth16 verifier, while the second focused on enforcing constraints on Bitcoin transactions using zero-knowledge proofs, so to ensure privacy and enhance programmability.
+At nChain, I focused on the design and implementation of zkSNARK-based systems. My first project involved implementing a Groth16 verifier in Bitcoin Script; the second used zero-knowledge proofs to enforce arbitrary constraints on Bitcoin transactions, improving privacy and programmability
 
-The project led to two papers:
+The projects led to two papers:
 
 <ol>
 <li value="9">
-<b>Enforcing arbitrary constraints on Bitcoin transactions</b>, with Enrique Larraia, <a href="https://eprint.iacr.org/2025/912">ePrint:2025:192</a>.
+<b>Enforcing arbitrary constraints on Bitcoin transactions</b>, with Enrique Larraia, <a href="https://eprint.iacr.org/2025/912">ePrint:2025/912</a>.
 </li>
 </ol>
 
@@ -23,8 +22,6 @@ The project led to two papers:
 <b>Practical Implementation of Pairing-Based zkSNARK in Bitcoin Script</b>, with Enrique Larraia, Paul Germouty, Wei Zhang, published in the <a href="https://link.springer.com/book/9783031823480">Computer Security. ESORICS 2024 International Workshops</a> (as part of the proceedings of <i>8th International Workshop on Cryptocurrencies and Blockchain Technology</i>), <a href="https://eprint.iacr.org/2024/1498">ePrint:2024/1498</a>.
 </li>
 </ol>
-
-The code supporting the papers (and more) is available in the GitHub repositories [zkscript](https://github.com/nchain-innovation/zkscript_package) and [bitcoin_r1cs](https://github.com/nchain-innovation/bitcoin_r1cs).
 
 # PhD
 
@@ -41,7 +38,7 @@ by looking at various algebraic gadgets attached to them (the focus mainly being
 </li>
 </ol>
 
-Below is a list the papers I wrote during my PhD:
+Below is a list of the papers I wrote during my PhD:
 
 <ol>
 <li value="6">
@@ -57,15 +54,15 @@ Below is a list the papers I wrote during my PhD:
 </li>
 
 <li value="3">
-<b>Entropy of the composition of two spherical twists</b>, with Jongmyeong Kim, published in <a href="https://projecteuclid.org/journals/osaka-journal-of-mathematics/volume-60/issue-3/Entropy-of-the-composition-of-two-spherical-twists/5651ojm.full">Osaka Math Journal</a>, Vol 60 No. 3 (July 2023), <a href="https://arxiv.org/abs/2107.06079">arXiv:2107.06079</a>.
+<b>Entropy of the composition of two spherical twists</b>, with Jongmyeong Kim, published in <a href="https://projecteuclid.org/journals/osaka-journal-of-mathematics/volume-60/issue-3/Entropy-of-the-composition-of-two-spherical-twists/5651ojm.full">Osaka Journal of Mathematics</a>, Vol 60 No. 3 (July 2023), <a href="https://arxiv.org/abs/2107.06079">arXiv:2107.06079</a>.
 </li>
 
 <li value="2">
-<b>Spherical functors and the flop-flop autoequivalence</b>,<sup><a href="#footnote">1</a></sup> <a href="https://arxiv.org/abs/2007.14415">arXiv:2007.14415</a>.
+<b>Spherical functors and the flop-flop autoequivalence</b>,<sup><a href="#footnote" aria-label="See footnote 1">1</a></sup> <a href="https://arxiv.org/abs/2007.14415">arXiv:2007.14415</a>.
 </li>
 
 <li value="1">
-<b>On the composition of two spherical twists</b>,<sup><a href="#footnote">1</a></sup> published in <a href="https://academic.oup.com/imrn/article-abstract/2023/20/17270/6748177">IMRN</a>, <a href="https://arxiv.org/abs/2006.06016">arXiv:2006.06016</a>.
+<b>On the composition of two spherical twists</b>,<sup><a href="#footnote" aria-label="See footnote 1">1</a></sup> published in <a href="https://academic.oup.com/imrn/article-abstract/2023/20/17270/6748177">IMRN</a>, <a href="https://arxiv.org/abs/2006.06016">arXiv:2006.06016</a>.
 </li>
 
 </ol>
@@ -73,9 +70,12 @@ Below is a list the papers I wrote during my PhD:
 I presented some of the above papers at various conferences/seminars, below you can find some recordings of these presentations:
 
 - **Spherical functors and the flop-flop autoequivalence**
-    - [A geometric presentation of the flop-flop autoequivalence as a(n inverse) spherical twist](https://www.birs.ca/events/2020/5-day-workshops/20w5176/videos/watch/202011041000-Barbacovi.html), *Derived, Birational, and Categorical Algebraic Geometry* (Banff International Research Station, online, 2020)
+    - [A geometric presentation of the flop-flop autoequivalence as a(n inverse) spherical twist](https://videos.birs.ca/2020/20w5176/202011041000-Barbacovi.mp4), *Derived, Birational, and Categorical Algebraic Geometry* (Banff International Research Station, online, 2020)
     - [The flop-flop autoequivalence via spherical functors](https://www.mathnet.ru/eng/present29016), *International Conference "Categories and Birational Geometry"* (Moscow, online, 2020)
 - **On Gromov-Yomdin type theorems and a categorical interpretation of holomorphicity**
     - [Categorical dynamics and holomorphicity](https://www.birs.ca/events/2021/5-day-workshops/21w5509/videos/watch/202111161400-Barbacovi.html), *Derived, Birational, and Categorical Algebraic Geometry* (Banff International Research Station, 2021)
 
-<a name="footnote">1</a>: The results of this paper appeared in my PhD thesis in an updated and improved form; please see the thesis for these results.
+<aside class="page-note" id="footnote">
+  <span class="page-note__marker">1</span>
+  <p>The results of this paper appeared in my PhD thesis in an updated and improved form; please see the thesis for these results.</p>
+</aside>

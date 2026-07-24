@@ -3,28 +3,11 @@
 
   <div class="wrapper">
 
-    {% comment %} <h2 class="footer-heading">{{ site.title | escape }}</h2> {% endcomment %}
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-            Contacts
-            {%- if site.email_one -%}
-            <li><a class="u-email" href="mailto:{{ site.email_one }}">{{ site.email_one }}</a></li>
-            {%- endif -%}
-            {%- if site.email_two -%}
-            <li><a class="u-email" href="mailto:{{ site.email_two }}">{{ site.email_two }}</a></li>
-            {%- endif -%}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        GitHub
-        {%- include social.html -%}
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
+    <div class="footer-inner">
+      <p>&copy; {{ 'now' | date: '%Y' }} {{ site.title | escape }}</p>
+      <div class="footer-links">
+        <a class="u-email" href="mailto:{{ site.email_one }}">Email</a>
+        <a href="https://github.com/{{ site.github_username_one }}">GitHub</a>
       </div>
     </div>
 

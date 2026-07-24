@@ -4,6 +4,7 @@ layout: default
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
+    <a class="post-back" href="{{ '/blogs-and-notes/' | relative_url }}">← Writing</a>
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="post-meta">
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
@@ -11,13 +12,44 @@ layout: default
         {{ page.date | date: date_format }}
       </time>
       {%- if page.author -%}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+        <span aria-hidden="true"> · </span><span itemprop="author"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
       {%- endif -%}</p>
+    {%- if page.tags.size > 0 -%}
+      <ul class="post-tags" aria-label="Topics">
+        {%- for tag in page.tags -%}<li>{{ tag }}</li>{%- endfor -%}
+      </ul>
+    {%- endif -%}
+    {%- if page.series -%}
+      {%- assign series_posts = site.posts | where: "series", page.series | sort: "series_order" -%}
+      <nav class="series-nav" aria-label="Article series">
+        <p>{{ page.series }}</p>
+        <ol>
+          {%- for series_post in series_posts -%}
+            <li{% if series_post.url == page.url %} class="is-current"{% endif %}>
+              <a href="{{ series_post.url | relative_url }}"{% if series_post.url == page.url %} aria-current="page"{% endif %}>Part {{ series_post.series_order }}: {{ series_post.title | remove_first: 'OP_CHECKSIG beyond signature validation: ' }}</a>
+            </li>
+          {%- endfor -%}
+        </ol>
+      </nav>
+    {%- endif -%}
   </header>
+
+  <details class="post-toc" hidden>
+    <summary>Contents</summary>
+    <nav aria-label="Table of contents">
+      <ol></ol>
+    </nav>
+  </details>
 
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
+
+  {%- if page.source_url -%}
+    <footer class="post-source">
+      <p>This article was originally published on <a href="{{ page.source_url }}">HackMD</a>.</p>
+    </footer>
+  {%- endif -%}
 
   {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}
